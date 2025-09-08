@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "nel.stupidbush.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"BushNoPlayerEffectMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

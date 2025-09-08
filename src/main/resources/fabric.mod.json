@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "stupidbush",
+	"version": "${version}",
+
+	"name": "Stupid Bush",
+	"description": "Just whitelists the Player to not get slowed down by Bushes or pricked. However mobs do act vanilla. derp.",
+	"authors": [
+		"NelA470"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/IAmSomeoneLol/stupidbush"
+	},
+
+	"license": "MIT",
+	"icon": "assets/stupidbush/icon.png",
+
+	"environment": "*",
+
+	"entrypoints": {
+		"main": [
+			"nel.stupidbush.Stupidbush"
+		],
+		"client": [
+			"nel.stupidbush.StupidbushClient"
+		]
+	},
+
+	"mixins": [
+		"stupidbush.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": ">=1.20 <=1.21.8",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
